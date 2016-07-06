@@ -65,7 +65,7 @@ function randNumber(max,min){
   return Math.floor((Math.random()*max))+min;
 }
 for(i=0;i<26;i++){
-    is.push(randNumberF(200,0.02));
+    is.push(randNumberF(100,0.2));
 }
 var x = 600;
 var y = 600;
