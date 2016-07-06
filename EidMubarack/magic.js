@@ -90,7 +90,7 @@ function draw() {
         ctx.fillStyle="#fff";
         ctx.font="12px Arial";
         
-        ctx.fillText("عيد مبارك - لجميع اعضاء io.husob.com ",
+        ctx.fillText("عيد مبارك - لجميع اعضاء مجتمع حسوب وجميع المسلمين ! :D ",
             20
             ,
             40
