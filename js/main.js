@@ -1,5 +1,5 @@
-var SCREEN_WIDTH=screen.width;
-var SCREEN_HEIGHT=screen.height;
+var SCREEN_WIDTH=window.innerWidth;
+var SCREEN_HEIGHT=window.innerHeight;
 function after1(fun){
 	setTimeout(function(){
 		
