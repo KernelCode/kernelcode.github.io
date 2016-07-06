@@ -102,15 +102,15 @@ function draw() {
             );
         ctx.fillStyle="#000";
         for(isi=1;isi<is.length;isi++){
-            y=(Math.sin(is[isi])*is[isi]*3+c.height/6)+Math.sin(acc)*100*-1;
-            x=(Math.cos(is[isi])*is[isi]/6+c.width/5)+Math.cos(acc)*200;
+            y=(Math.sin(is[isi])*is[isi]*3+c.height/2)+Math.sin(acc)*100*-1;
+            x=(Math.cos(is[isi])*is[isi]/6+c.width/2)+Math.cos(acc)*200;
             draw_line(x,y,1,1,new color(0,0,0,1));
             points.push(new point(x,y));
         }
 
         for(isi=1;isi<is.length;isi++){
-            y=(Math.cos(is[isi])*is[isi]/6+c.height/6)+Math.sin(acc)*100*-1;
-            x=(Math.sin(is[isi])*is[isi]*3+c.width/5)+Math.cos(acc)*200;
+            y=(Math.cos(is[isi])*is[isi]/6+c.height/2)+Math.sin(acc)*100*-1;
+            x=(Math.sin(is[isi])*is[isi]*3+c.width/2)+Math.cos(acc)*200;
             draw_line(x,y,1,1,new color(0,0,0,1));
             points.push(new point(x,y));
         }
