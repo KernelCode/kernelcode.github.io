@@ -69,7 +69,7 @@ $(document).ready(function () {
 	animArray = ['left_to_right','left_to_right2'];
 	$(".floting-arraw").css("margin-left",SCREEN_WIDTH-120);
 	$(".floting-arraw").css("margin-top",SCREEN_HEIGHT-190);
-	$(".floting-list").css("margin-left",SCREEN_WIDTH-123);
+	$(".floting-list").css("margin-left",SCREEN_WIDTH/4);
 	$(".floting-list").css("margin-top",180);
 	$(".full-page-cer").css("margin-top",SCREEN_HEIGHT-18);
 	$(".nextBox").css("margin-top",-25);
