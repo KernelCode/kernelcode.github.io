@@ -391,43 +391,47 @@ $(document).ready(function () {
 	
 	$(".work-box-gra").mouseenter(function(id){
 		$(".work-box-gra .info").css("transform","translateX(10px)");
-		player2.playVideo();
+		
 		$(".work-box-gra .desc").css("opacity","1");
 		$(".work-box-gra .header").css("opacity","1");
 		$(".work-box-gra .desc").css("transform","translateX(0px)");
 		$(".work-box-gra .header").css("transform","translateX(0px)");
 		
 		$(".work-box-gra img").css("opacity","0.2");
+		player2.playVideo();
 	});
 	$(".work-box-gra").mouseleave(function(){
 		$(".work-box-gra .info").css("transform","translateX(2px)");
-		player2.pauseVideo();
+		
 		$(".work-box-gra .desc").css("opacity","0");
 		$(".work-box-gra .header").css("opacity","0");
 		$(".work-box-gra .desc").css("transform","translateX(10px)");
 		$(".work-box-gra .header").css("transform","translateX(-10px)");
 		
 		$(".work-box-gra img").css("opacity","0.9");
+		player2.pauseVideo();
 	});
 	$(".work-box-game").mouseenter(function(id){
 		$(".work-box-game .info").css("transform","translateX(10px)");
-		player1.playVideo();
+		
 		$(".work-box-game .desc").css("opacity","1");
 		$(".work-box-game .header").css("opacity","1");
 		$(".work-box-game .desc").css("transform","translateX(0px)");
 		$(".work-box-game .header").css("transform","translateX(0px)");
 		
 		$(".work-box-game img").css("opacity","0.2");
+		player1.playVideo();
 	});
 	$(".work-box-game").mouseleave(function(){
 		$(".work-box-game .info").css("transform","translateX(2px)");
-		player1.pauseVideo();
+		
 		$(".work-box-game .desc").css("opacity","0");
 		$(".work-box-game .header").css("opacity","0");
 		$(".work-box-game .desc").css("transform","translateX(10px)");
 		$(".work-box-game .header").css("transform","translateX(-10px)");
 		
 		$(".work-box-game img").css("opacity","0.9");
+		player1.pauseVideo();
 	});
 	if(screen.width<720){
 		$(".full-page").css("background-size","300% ");
