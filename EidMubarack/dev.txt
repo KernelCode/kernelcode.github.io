@@ -1,1 +1,1 @@
-<div class='container' style='font-size:12px'><span>Developed with <span style='color:red' class='fa fa-heart'></span> by <a href='http://kernelcode.github.io/'>Abdulah Altahery</a></span></div>
+<div class='container' style='font-size:12px'><span>Developed with <span style='color:red' class='fa fa-heart'></span> by <a href='http://kernelcode.github.io/'>Abdullah Altahery</a></span></div>
