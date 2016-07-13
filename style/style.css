@@ -131,7 +131,21 @@ b{
 	background:#4183c4;
 	
 }
-
+.linkedin-color{
+	transition: color 0.2s ease;
+	color:#666;
+}
+.linkedin-color:hover{
+	
+	color:#fff;
+}
+.linkedin{
+	background:#efefef;
+}
+.linkedin:hover{
+	background:#3b5998;
+	
+}
 .facebook-color{
 	transition: color 0.2s ease;
 	color:#666;
