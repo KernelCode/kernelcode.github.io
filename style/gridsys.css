@@ -12,19 +12,32 @@
 
   Note: IE6 works fine without this fix.
 */
-
-body {
-  min-width: 960px;
+@media screen and (min-width: 900px) {
+  body {
+    min-width: 960px;
+  }
+  .container_16 {
+    margin-right: auto;
+    margin-left: auto;
+    width: 960px;
+  }
 }
+@media screen and (max-width: 500px) {
+  body {
+    min-width: auto;
+  }
+  .container_16 {
+    margin-right: auto;
+    margin-left: auto;
+    width: auto;
+  }
+}
+
 
 /* Container
 ----------------------------------------------------------------------------------------------------*/
 
-.container_16 {
-  margin-right: auto;
-  margin-left: auto;
-  width: 960px;
-}
+
 
 /* Grid >> Global
 ----------------------------------------------------------------------------------------------------*/
