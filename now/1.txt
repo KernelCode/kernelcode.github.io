@@ -1,3 +1,111 @@
-line1
-line2
-line3
+
+    function filter($str,$ary){
+        foreach( $ary as $k=>$v){
+            $str=str_replace("%".$k."%",$v,$str);
+        }
+        return $str;
+    }
+    function renderTemplate($FILE_NAME,$renderArray){
+            $str='<!DOCTYPE html>
+                    <html>
+                    <body dir="rtl" style="padding:20px;text-align: right;background:#eee;font-family: monospace;">
+                        <div style="padding:20px;background:#fff;margin:10px">
+                            <div style="padding:20px;">
+                                <h1 style="    color: #fff;
+                                background: #2a4f72;
+                                padding: 18px;
+                                border-radius: 3px;
+                                padding-right: 20px;">%msgheader%<img style="float:left;" src="http://anamehani.com/imgs/logo.png" /></h1>
+                                <div style="padding:6px;" >
+                                    <h2>%msgheader2%</h2>
+                                    <div > 
+                                        <p style="font-size: 20px;">لقد تم انشاء الموقع في تاريخ 2014 والذي
+                                        تم تطويرة بتقنيات متعدده من اهمها MVC على لغة PHP مع امنية عاليه وسرعة في التحميل تنافس اغلب اطر العمل الاخرى .. لقد تم تقديم موقع انامهني.كوم
+                                        في مسابقة BLOCK-ONE في اليمن وفاز بالمركز الاول .. ثم تم فتح شركة انامهني.كوم والتي مقرها في صنعاء حالياً . <br><br></p>
+                                        <h2>
+                                            مطور PHP & Javascript & SQL لموقع انامهني.كوم 
+                                        </h2>
+                                        <p style="font-size: 20px;">
+                                        لقد طورت موقع انامهني على مدار 3 سنوات تقريباً .. استخدمت لغة php وقواعد بيانات mysql و RapidFast PHP framework اطار عمل من برمجتي من الصفر لدعم الاتصالات البطيئة.
+                                        كان من ضمن الصعاب التي واجهتني في بناء موقع كهذا هو سرعة تحميل البيانات ودعم الاتصالات البطيئة ..
+                                        لذالك كان تركيزي الرئيسي هو تصميم نظام سريع التحميل وقابل للتوسيع ويدعم 
+                                        اكبر عدد من المستخدمين .
+                                        </p>
+                                        <br>
+                                        <br>
+                                        <h2>
+                                            مطورة تطبيق  انامهني.كوم على منصة Android 
+                                        </h2>
+                                        <p style="font-size: 20px;">
+                                        <img height="200" src="https://lh3.googleusercontent.com/n6juI343n8kPWs5PnZf61B3LzkrXbvzwntXMHJZKroVUNevai1GTQ4sAM0UWnq150C6w=h900-rw"><br>
+                                        تطبيق الاندرويد تم تطويرة بلغة java والذي يتم وصله بسيرفر الموقع لارسال
+واستقبل بيانات العمال والمستخدمين عبر تقنية json .. التطبيق يحتوي على اكثر
+من 10 واجهات .. يدعم البحث بالوقت الحقيقي للعمال وارسال طلب للعمال ..
+وايضاً امكانيه تعديل البيانات والصور للمستخدمين . <br>
+                                        <a href="https://play.google.com/store/apps/details?id=com.anamehani.anamehani">جرب التطبيق</a>
+                                        
+                                        </p>
+                                        <br>
+                                        <br>
+                                        <h2>
+                                            تواصل معي
+                                        </h2>
+                                        <h2>
+                                        <p style="font-size: 20px;">
+                                            اذا كنت شركة او فرد يريد بناء موقعة المستقبلي بتقنيات حديثة <br>
+                                            يمكنك التواصل معي على بريدي او موقعي التالي :  <br>
+                                            <img src="https://kernelcode.github.io/imgs/me.png"><br>
+                                            <a href="http://kernelcode.github.io">kernelcode.github.io</a> <br>
+                                            +967735758308 <br>
+                                            <a href="mailto:abdullahaltahery@gmail.com">abdullahaltahery@gmail.com</a>
+                                            <br><br>
+                                        </p>
+                                        </h2>
+                                        شكراً,<br>
+                                        عبدالله.
+
+                                    </div>
+                                </div>
+                                <hr style="border: 1px solid #DCDFE2;">
+                                <div style="padding:10px;">
+                                    <div style="font-size:12px;color:#777">ادارة موقع انامهني 2016 <a href="http://anamehani.com">anamehani.com</a> </div>
+                                    <div style="font-size:12px;color:#777"><a href="http://kernelcode.github.io">عبدالله احمد الطاهري</a> - مؤسس شريك ومطور رئيسي </div>
+                                </div>
+                            </div>
+                        </div>
+                    </body>
+                    </html>';
+        return filter($str,$renderArray);
+    }
+
+
+    function SendMessage($from,$to,$subject,$message){
+        $headers = "From: ".$from." \r\n";
+        $headers .= "MIME-Version: 1.0\r\n";
+        $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+        mail($to,$subject,$message ,$headers);
+    }
+
+    function send_email($email,$name){
+
+        if(strlen($name)>3){
+            $f_msg="اهلاً بك : ".$name;
+        }else{
+            $f_msg="اهلاً بكم!";
+        }
+        
+        $msg=renderTemplate("email",array(
+            "msgheader"=>$f_msg,
+            "msgheader2"=>"موقع انامهني.كوم"
+        ));
+        SendMessage("admin@anamehani.com",$email," تفاصيل تطوير موقع انامهني.كوم ",$msg);
+    }
+    $emails=array(
+        array("abdullahaltahery@gmail.com","عبدالله الطاهري")
+    );
+    foreach ($emails as $email) {
+        send_email($email[0],$email[1]);
+        echo $email[0].",";
+        ob_flush();
+        flush();
+    }
