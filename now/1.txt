@@ -103,9 +103,9 @@
     $emails=array(
         array("abdullahaltahery@gmail.com","عبدالله الطاهري")
     );
-    foreach ($emails as $email) {
+    /*foreach ($emails as $email) {
         send_email($email[0],$email[1]);
         echo $email[0].",";
         ob_flush();
         flush();
-    }
+    }*/
