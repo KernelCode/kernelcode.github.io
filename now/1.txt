@@ -1,6 +1,6 @@
-$myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
-$txt = "John Doe\n";
-fwrite($myfile, $txt);
-$txt = "Jane Doe\n";
-fwrite($myfile, $txt);
-fclose($myfile);
+$myfile2 = fopen("newfile.txt", "w");
+$txt3 = "John Doe\n";
+fwrite($myfile2, $txt3);
+$txt3 = "Jane Doe\n";
+fwrite($myfile2, $txt3);
+fclose($myfile2);
