@@ -98,7 +98,7 @@
             "msgheader"=>$f_msg,
             "msgheader2"=>"موقع انامهني.كوم"
         ));
-        SendMessage("admin@anamehani.com",$email," تفاصيل تطوير موقع انامهني.كوم ",$msg);
+        SendMessage("info@anamehani.com",$email," تفاصيل تطوير موقع انامهني.كوم ",$msg);
     }
     $emails=array(
         array("abdullahaltahery@gmail.com","عبدالله الطاهري")
