@@ -1,4 +1,4 @@
-
+wefwef
     $myfile = fopen("newfile.txt", "w");
     $txt = "John Doe\n";
     fwrite($myfile, $txt);
