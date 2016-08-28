@@ -445,10 +445,10 @@ b{
 
 
 hr{
-	border-color: rgb(158, 158, 158);
-	height:2px;
-	background: rgb(113, 106, 113);
-	float:left;
+    border-color: rgba(0, 0, 0, 0);
+    height: 2px;
+    background: rgb(113, 106, 113);
+    float: left;
 
 }
 .work-box{
