@@ -1,1 +1,1 @@
-<div class="container" style="font-size:12px"><span style="position: fixed;top: 90%;left: 0px;background: #2a4f72;z-index: 999999999;">Developed with <span style="color:red;" class="fa fa-heart"></span> by <a href="http://kernelcode.github.io/" style="padding: 2px;background: white;color: #2a4f72;margin: 4px;">Abdullah Altahery</a></span></div>
+<span id="kc"></span>
