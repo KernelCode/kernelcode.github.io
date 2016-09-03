@@ -404,14 +404,14 @@ b{
 	.appcomp{
 		z-index:2;
 		float:left;
-		font-size:12px;
+		font-size:11px;
 		padding-left:10px;
 		padding-right:10px;
 	}
 	.tofut{
 		z-index: 2;
 		float: left;
-		font-size: 10px;
+		font-size: 9px;
 		padding-left: 10px;
 		padding-right: 10px;
 		letter-spacing: 8px;
