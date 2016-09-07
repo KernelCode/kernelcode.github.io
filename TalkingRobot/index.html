@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html onclick="document.getElementById('hidden-input').focus();" >
+<head>
+    <meta charset="utf-8" />
+
+	<script  type="text/javascript" src="/js/Robot.min.js" ></script>
+	<link rel="stylesheet" type="text/css" href="/css/style.css" ></link>
+
+</head>
+
+<body onclick="document.getElementById('hidden-input').focus();" onkeyup="MainConsole(event)" onkeydown="playSound('ks'+KEBOARD_SOUNDS);" >
+	<div class="backgroundimg">
+	</div>
+	<div class="padding">
+		<div id="sound">
+		</div>
+		<div style="    background: rgba(0,0,0,0.4);padding:10px;">
+			<div style="color: #fff;float: right;font-family: monospace;font-size: 10px;">KernelCode (c) 2016</div>
+			<div class="console" id="console">
+				<code>
+					<div style="color:#777;padding-bottom:10px;">
+						Welcome to my AI THE (<b>HAL9000</b>) ! just don't make it mad ! :D , Enjoy . 
+					</div>
+				</code>
+				<code>
+					<div class="command_line" id="command_line">
+						
+						<span style="">
+							User@<span style="color:#eee">HAL9000</span> 
+							<span style="color:#f55">:~$</span>
+						</span>
+						<span id="command" style="color:#eee"></span><span id="ptr">|</span>
+					</div>
+					<span id="res-date" style="color:#777;font-size:8px"></span><span id="res" style="color:#7f7"></span>
+					<div style="display:none" id='thinking'></div>
+				</code>
+
+			</div>
+		</div>
+	</div>
+	<input id="hidden-input" style="opacity:0" autofocus  />
+</body>
+</html>
