@@ -407,6 +407,7 @@ b{
 		font-size:11px;
 		padding-left:10px;
 		padding-right:10px;
+		width:100%;
 	}
 	.tofut{
 		z-index: 2;
@@ -415,6 +416,7 @@ b{
 		padding-left: 10px;
 		padding-right: 10px;
 		letter-spacing: 8px;
+		width:100%;
 
 	}
 	.name{
