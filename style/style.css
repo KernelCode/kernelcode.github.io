@@ -407,7 +407,7 @@ b{
 		font-size:11px;
 		padding-left:10px;
 		padding-right:10px;
-		width:100%;
+		width: 41%;
 	}
 	.tofut{
 		z-index: 2;
@@ -416,7 +416,7 @@ b{
 		padding-left: 10px;
 		padding-right: 10px;
 		letter-spacing: 8px;
-		width:100%;
+		width: 65%;
 
 	}
 	.name{
@@ -431,14 +431,14 @@ b{
 		font-size: 9px;
 		margin-top: -16px;
 		color: rgb(113, 106, 113);
-		width: 65%;
+		width:100%;
 		
 	}
 	.appcomp{
 		font-size: 9px;
 		text-align: center;
 		color: rgb(113, 106, 113);
-		width: 41%;
+		width:100%;
 	}
 	.name{
 		color: rgb(113, 106, 113);
