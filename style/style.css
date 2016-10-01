@@ -431,11 +431,14 @@ b{
 		font-size: 9px;
 		margin-top: -16px;
 		color: rgb(113, 106, 113);
+		width: 65%;
+		
 	}
 	.appcomp{
 		font-size: 9px;
 		text-align: center;
 		color: rgb(113, 106, 113);
+		width: 41%;
 	}
 	.name{
 		color: rgb(113, 106, 113);
