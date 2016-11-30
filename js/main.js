@@ -71,12 +71,9 @@ $(document).ready(function () {
 	$(".floting-arraw").css("margin-top",SCREEN_HEIGHT-190);
 	if(SCREEN_WIDTH<500 ){
 
-        $(".floting-list").css("margin-left",0);
-        $(".floting-list").css("margin-top",0);
         
     }else if(SCREEN_HEIGHT<720){
-        $(".floting-list").css("margin-left",window.innerWidth-123);
-        $(".floting-list").css("margin-top",180);
+        
     }
 	$(".full-page-cer").css("margin-top",SCREEN_HEIGHT-18);
 	$(".nextBox").css("margin-top",-25);
@@ -235,47 +232,36 @@ $(document).ready(function () {
 			$(".box-cir").css("position","absolute");
 			
 		}
-        if(screen.width<500 ){
-		  $(".floting-list").css("margin-top",$(this).scrollTop()+0);
-		}else{
-            $(".floting-list").css("margin-top",$(this).scrollTop()+SCREEN_HEIGHT/2-180);
-        }
+       
 		//$(".header-text").text("Who I am?!");
         if(screen.width<500 ){
-            $(".floting-list").css("color","#eee");
-            $(".floting-list").css("text-shadow","1px 1px 5px #000");
+          
         }else if(screen.width<720){
     
     		if($(this).scrollTop()>=300){
-    			//$(".floting-list").css("margin-top",670+300);
+    			/
     			$(".floting-arraw").css("opacity","0");
-    			$(".floting-list").css("color","#333");
     			$(".star").css("display","none");
     			
     		}else{
     			$(".star").css("display","block");
     		}
     		if($(this).scrollTop()>=900){
-    			$(".floting-list").css("color","#eee");
-    			//$(".floting-list").css("margin-top",1340+500);
+    			
     			
     			
     		}
     		if($(this).scrollTop()>=1900){
-    			$(".floting-list").css("color","#eee");
-    			//$(".floting-list").css("margin-top",2200+500);
+    			
     			
     		}
     		if($(this).scrollTop()>=2700){
-    			$(".floting-list").css("color","#333");
-    			//$(".floting-list").css("margin-top",2200+500);
+    			
     			
     			
     		}
     		if($(this).scrollTop()<300){
-    			$(".floting-arraw").css("opacity","1");
-    			//$(".floting-list").css("margin-top",200);
-    			$(".floting-list").css("color","#eee");
+    			
     			
     		}
     		last=$(this).scrollTop();
@@ -454,8 +440,7 @@ $(document).ready(function () {
 	if(screen.width<500 ){
 		$(".full-page").css("background-size","160% auto");
 		$(".full-page").css("background-position","-130px 0px");
-		$(".floting-list").css("margin-left",0);
-        $(".floting-list").css("margin-top",0);
+		
 		$(".mFont").css("font-size","100px");
         $(".mWidth").css("float","none");
         $(".info").css("font-size","10px");
@@ -470,8 +455,7 @@ $(document).ready(function () {
         $(".mFont").css("font-size","220px");
 		$(".full-page").css("background-size","300% ");
 		$(".full-page").css("background-position","-900px 0px");
-        $(".floting-list").css("margin-left",window.innerWidth-123);
-        $(".floting-list").css("margin-top",180);
+        
         $(".container_16").css("width","91%");
         $(".container_16").css("padding","50px");
 	}
