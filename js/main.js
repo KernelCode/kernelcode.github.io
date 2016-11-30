@@ -239,7 +239,7 @@ $(document).ready(function () {
         }else if(screen.width<720){
     
     		if($(this).scrollTop()>=300){
-    			/
+    			
     			$(".floting-arraw").css("opacity","0");
     			$(".star").css("display","none");
     			
