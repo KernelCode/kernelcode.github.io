@@ -509,7 +509,7 @@ a{
 	color:#eee;
 	font-size:30px;
 	transition: transform 0.9s ease,background 0.9s ease,color 0.5s ease,margin 0.7s ease,color 0.4s ease,opacity 0.7s ease;
-	position:absolute;
+	position:fixed;
 	z-index:999;
 
 }
