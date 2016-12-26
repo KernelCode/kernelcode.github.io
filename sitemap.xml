@@ -7,8 +7,14 @@
       <priority>1</priority>
    </url>
    <url>
-      <loc>https://kernelcode.github.io/</loc>
-      <lastmod>2016-7-15</lastmod>
+      <loc>https://kernelcode.github.io/interactive_cv/</loc>
+      <lastmod>2016-12-27</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>1</priority>
+   </url>
+   <url>
+      <loc>https://kernelcode.github.io/RandomAttack3D/</loc>
+      <lastmod>2016-12-27</lastmod>
       <changefreq>monthly</changefreq>
       <priority>1</priority>
    </url>
@@ -18,22 +24,13 @@
       <changefreq>monthly</changefreq>
       <priority>1</priority>
    </url>
-   <url>
-      <loc>https://kernelcode.github.io/now/</loc>
-      <lastmod>2016-7-15</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>1</priority>
-   </url>
+
    <url>
       <loc>http://kernelcode.github.io/EidMubarack/</loc>
       <lastmod>2016-7-15</lastmod>
       <changefreq>monthly</changefreq>
       <priority>1</priority>
    </url>
-   <url>
-      <loc>https://kernelcode.github.io/EidMubarack/</loc>
-      <lastmod>2016-7-15</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>1</priority>
-   </url>
+
+   
 </urlset>
