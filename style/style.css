@@ -1,5 +1,3 @@
-
-
 body{
 	padding:0px;
 	margin:0px;
@@ -229,15 +227,11 @@ b{
 @media screen and (min-width: 500px) {
 	.full-page{
 		
-		background: url('../imgs/codstage2.jpg')  ;
-		
-		background-size: 100%;
-		background-repeat: no-repeat;
+
 		
 		width:100%;
 		height:100vh;
-		color:red;
-		
+
 		/* Internet Explorer 10 */
 		display:-ms-flexbox;
 		-ms-flex-pack:center;
@@ -408,6 +402,7 @@ b{
 		padding-left:10px;
 		padding-right:10px;
 		width: 41%;
+		text-align: center;
 	}
 	.tofut{
 		z-index: 2;
@@ -416,11 +411,12 @@ b{
 		padding-left: 10px;
 		padding-right: 10px;
 		letter-spacing: 8px;
-		width: 65%;
+		width: 70%;
+		text-align: center;
 
 	}
 	.name{
-		color: rgb(113, 106, 113);
+		color: rgb(82, 66, 58);
 		font-size: 85px;
 		
 	}
@@ -441,7 +437,7 @@ b{
 		width:100%;
 	}
 	.name{
-		color: rgb(113, 106, 113);
+		color: rgb(82, 66, 58);
 		font-size: 29px;
 		
 	}
@@ -452,7 +448,7 @@ b{
 hr{
     border-color: rgba(0, 0, 0, 0);
     height: 2px;
-    background: rgb(113, 106, 113);
+    background: rgb(71, 54, 44);
     float: left;
 
 }
@@ -506,7 +502,7 @@ a{
 
 .floting-list{
 	padding:5px;
-	color:#eee;
+	color:#685349;
 	margin-left: 23px;
 	font-size:30px;
 	transition: transform 0.9s ease,background 0.9s ease,color 0.5s ease,margin 0.7s ease,color 0.4s ease,opacity 0.7s ease;
@@ -626,11 +622,7 @@ a{
 }
 .c-boxs{
 	position: absolute;
-    	top: 47%;
-    	height: 43px;
-    	margin-top: 8px;
-    	left: 50%;
-    	margin-left: -234px;
+
 }
 .center-about{
 	width:100%;
@@ -664,8 +656,8 @@ li:hover{
 	color:#fff;
 }
 .box{
-	width:42px;
-	height:42px;
+	width:142px;
+	height:142px;
 	transition: transform 0.7s ease,background 0.9s cubic-bezier(.68,.71,.7,.38),opacity 0.2s cubic-bezier(.68,.71,.7,.38);
 	float:left;
 	opacity:0.2;
