@@ -1,6 +1,8 @@
 {
 	"updates":
-	{},
+	{
+		"170515":{"main_version":"3.0","url":"https://www.mediafire.com/?zjm18dz3undcd2w","size":20,"date":"2017/05/15","commnets":"اصلاح البث المباشر"}
+	},
 	"versions":
 	["3.0"]
 }
