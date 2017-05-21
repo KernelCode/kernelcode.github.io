@@ -1,7 +1,8 @@
 {
 	"updates":
 	{
-		"170515":{"main_version":"3.0","url":"http://www.mediafire.com/file/zjm18dz3undcd2w/Estra7ah+Manager+3.1+Update.exe","size":20,"date":"2017/05/15","commnets":"اصلاح البث المباشر"}
+		"170515":{"main_version":"3.0","url":"http://www.mediafire.com/file/zjm18dz3undcd2w/Estra7ah+Manager+3.1+Update.exe","size":20,"date":"2017/05/15","commnets":"اصلاح البث المباشر"},
+		"170520":{"main_version":"3.0","url":"http://www.mediafire.com/file/oawcx3jdw2y5yby/Estra7ah+Manager+3.2+Full+Update.exe","size":88,"date":"2017/05/22","commnets":"اصلاحات وتحديثات جديده"}
 	},
 	"versions":
 	["3.0"]
