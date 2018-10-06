@@ -88,11 +88,7 @@
 </div>
 
 <script>
-    document.getElementById("enter").addEventListener("click",function(){
-        setTimeout(function(){
-            location.href="/index2.html";
-        },1000);
-    });
+
      var colors = [
         "#535353","#966915",
         "#a77d31","#523e19",
@@ -219,7 +215,9 @@
     e.addEventListener("click",function(){
         document.getElementById("body").style.transform="scale(1.3)";
         document.getElementById("body").style.opacity ="0";
-        
+        setTimeout(function(){
+            location.href="/index2.html";
+        },1000);
     });
 
 </script>
