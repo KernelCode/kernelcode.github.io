@@ -82,12 +82,17 @@
 
 
     </div>
-	<a href="/index2.html"><div class="enterbutn" id="enter">Enter</div></a>
+	<div class="enterbutn" id="enter">Enter</div>
     <iframe src="./cold.mp3" allow="autoplay" style="display:none" id="iframeAudio">
     </iframe> 
 </div>
 
 <script>
+    document.getElementById("enter").addEventListener("click",function(){
+        setTimeout(function(){
+            location.href="/index2.html";
+        },1000);
+    });
      var colors = [
         "#535353","#966915",
         "#a77d31","#523e19",
