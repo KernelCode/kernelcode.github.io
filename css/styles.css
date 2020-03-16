@@ -568,6 +568,14 @@ a:visited {
     margin: 11%;
     left: 10%;
   }
+  .pre .fill div{
+    float: left;
+    font-size: 20pt;
+    font-weight: 600;
+    color: #fff;
+    margin-top: -1px;
+    font-size: 13pt;
+  }
   
 }
 
