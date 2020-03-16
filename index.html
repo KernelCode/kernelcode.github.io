@@ -1,232 +1,449 @@
-<style>
-  html{
-      background:#000;
-  }
-  body {
-    overflow: hidden;
-    margin:0px;
-    padding:0px;
-    background: #131313; /* Old browsers */
-    background: -moz-radial-gradient(center, ellipse cover, #131313 0%, #000000 100%); /* FF3.6-15 */
-    background: -webkit-radial-gradient(center, ellipse cover, #131313 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
-    background: radial-gradient(ellipse at center, #131313 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131313', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
-  }
-    #body{
-        background: #131313; /* Old browsers */
-        background: -moz-radial-gradient(center, ellipse cover, #131313 0%, #000000 100%); /* FF3.6-15 */
-        background: -webkit-radial-gradient(center, ellipse cover, #131313 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
-        background: radial-gradient(ellipse at center, #131313 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131313', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Abdullah Altahery</title> 
+    <meta charSet="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="note" content="environment=development"/>
+  
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200,600,900&display=swap" rel="stylesheet">
+    <link href="./css/fontawesome.min.css" rel="stylesheet">
+    <link href="./css/brands.min.css" rel="stylesheet">
+    <link href="./css/solid.min.css" rel="stylesheet">
+    <!-- END FONTS-->
+    <!-- STYES-->
+    <link href="./css/flexboxgrid.min.css" rel="stylesheet">
+    <link href="./css/hamburgers.min.css" rel="stylesheet">
+    <!-- END STYES-->
+    
+    <meta name="DC.title" content="Title here" /> 
+    <meta name="DC.subject" content="Keywords here" /> 
+    <meta name="DC.description" content="Description here" /> 
+    <meta name="DC.format" content="text/html" /> 
+    <meta name="DC.publisher" content="Publisher here" /> 
+    <meta name="DC.language" content="en" /> 
+    
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body onload="onLoadText();onLoadScroll();onLoadFace();">
+    <!--
 
-        color: #a77d31;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 100;
-        -webkit-font-smoothing: antialiased;
-        overflow: hidden;
-
-        transition: all 1.7s ease;
-     
-        width:100%;
-        height: 100%;
-       
-    }
-  .letters{
-    width: 100%;
-    height: 100%;
+      PAGES TRANSITION
+      INTRO ANIMATION
+      MENUE
+    -->
+    <div class="overSTRICK">
+      <div class="bg background1"></div>
+      <div class="bg background2"></div>
+      <div class="bg background3">
+        <div class="scrollLEVEL">
+          <div class="txt" id="start">
+            Start
+          </div>
+          <div class="txt" id="about">
+            About
+          </div>
+          <div class="txt" id="projects">
+            Projects
+          </div>
+          <div class="txt" id="experiences">
+            Skills
+          </div>
+          <div class="txt" id="contact">
+            Contact
+          </div>
+        </div>
+      </div>
+    </div>
+    <canvas style="width: 100%;
+    height: 100vh;
     position: absolute;
-    top: 0px;
-  }
-  .letters > .letter{
-      color:#131313;
-      transform: scale(0);
-      opacity: 0.6;
-      font-size: 30px;
-  }
-  .name{
-    font-size: 17px;
-    margin: 5px;
-    background: #a77d31;
-    color: #f5f5f5;
-    border-radius: 3px;
-    padding: 3px;
-    width: 138px;
-  }
-  .enterbutn{
-    padding: 10px;
-    border: 1px solid #a77d31;
-    width: 101px;
-    text-align: center;
-    margin: 5px;
-    position: relative;
-    top: 84%;
-    margin: auto;
-    border-radius: 5px;
-    color: #e7b558;
-    transition: all 0.7s ease;
-    -webkit-font-smoothing: antialiased;
-  }
-  .enterbutn:hover{
-    padding: 10px;
-    background: #a77d31;
-    color:#fff;
-    cursor: pointer;
-    
-    
-  }
-</style>
+    " id="face" ></canvas>
 
-<div id="body">
-    <div class="letters" id="app">
 
+    <div class="overlay-buttons">
+      <div  class="hamburger hamburger--collapse" >
+        <div  class="hamburger-box">
+          <div  class="hamburger-inner"></div >
+        </div >
+      </div >
+      <div style=" z-index: 999;
+      position: fixed;
+      right: 1%;
+      bottom: 1%;">
+        <img style="width: 136px;" src="imgs/altahery.png" />
+      </div>
+      <div style="color: #fff;
+      position: fixed;
+      bottom: 10px;
+      right: 15px;
+      font-size: 12px;">Made with ☕ & ❤️ in 🇾🇪 </div>
+      <!--<div class="floatingMnu">
+        <div class="circ ">
+          <div>About</div>
+        </div>
+        <div class="circ">
+          <div>Projects</div>
+        </div>
+        <div class="circ">
+          <div>Skills</div>
+        </div>
+        <div class="circ">
+          <div>Education</div>
+        </div>
+        <div class="circ">
+          <div>Music</div>
+        </div>
+        <div class="circ">
+          <div>Games</div>
+        </div>
+        <div class="circ">
+          <div>Contact</div>
+        </div>
+      </div>-->
+      <!--
+      <div class="scrollLEVEL">
+        <div class="txt">
+          Start
+        </div>
+        <div class="txt">
+          About
+        </div>
+        <div class="txt">
+          Projects
+        </div>
+        <div class="txt">
+          Experiences
+        </div>
+      </div>-->
+      <div class="lang"></div>
+      <div class="leftSide">
+        <div class="PinDown">
+          <a href="https://www.facebook.com/YeTechSupport" target="_blank">
+            <div class="icon-item ">
+              <div class="d3d">
+                <span class="b"><i class="fab fa-facebook-f"></i></span>
+                <span class="r"><i class="fab fa-facebook-f"></i></span>
+                <span><i class="fab fa-facebook-f"></i></span>
+              </div>
+              
+            </div>
+          </a>
+          <a href="https://twitter.com/Robot0x01" target="_blank">
+            <div class="icon-item">
+              <div class="d3d">
+                <span class="b"><i class="fab fa-twitter"></i></span>
+                <span class="r"><i class="fab fa-twitter"></i></span>
+                <span><i class="fab fa-twitter"></i></span>
+              </div>
+            </div>
+          </a>
+          <a href="https://github.com/kernelcode" target="_blank">
+            <div class="icon-item">
+              <div class="d3d">
+                <span class="b"><i class="fab fa-github"></i></span>
+                <span class="r"><i class="fab fa-github"></i></span>
+                <span><i class="fab fa-github"></i></span>
+              </div>
+            </div>
+          </a>
+      
+          <a href="https://www.hackerrank.com/KernelCode" target="_blank">
+            <div class="icon-item">
+              <div class="d3d">
+                <span class="b"><i class="fab fa-hackerrank"></i></span>
+                <span class="r"><i class="fab fa-hackerrank"></i></span>
+                <span><i class="fab fa-hackerrank"></i></span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+     
+    </div>
+    <div>
+      <div id="cir" class="cir"></div>
+      <div id="cir2r" class="cir2r"></div>
+      <div id="cir2b" class="cir2b"></div>
+      <div id="cir2" class="cir2"></div>
+    </div>
+
+    <div class="stages stage1">
+      <div class="wrapper" style="  margin-top: 28%;  margin-bottom: 3%;">
+      
+        <div class="row">
+          <div class="col-xs-12">
+              
+              <div class="centerIt">
+                <div style="font-size: 35pt;font-weight: 600; " class="add3D Left element an-write " animation="write" after="1">Hello, I'm Abdullah</div>
+                <div style="font-size: 12pt;margin-top: -10px;" class="element " animation="write" after="6">Tommowor's Innovator </div>
+               
+              </div>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="stages stage2">
+      
+      <div class="row displayNoneIfMobile">
+        <div class="col-md-2 colline">
+        
+        </div>
+        <div class="col-md-8 colline">
+          <div style="height:100px;"></div>
+        </div>
+        <div class="col-md-2 colline">
+        
+        </div>
+      </div>
+   
+      <div class="row top-md">
+        <div class="col-md-2 displayNoneIfMobile colline">
+          
+        </div>
+      
+        <div class="col-md-1 displayNoneIfMobile colline ">
+          <img  class="element" animation="show" after="2" src="imgs/astronaut4.png" style="
+            position: relative;
+            right: 88%;    width: 300%;"
+          />
+        
+        </div>
+    
+        <div class="col-md-9 col-xs-12 colline">
+          <div class="MarginLeftOnMobile">
+            <div style="font-size: 45pt;font-weight: bold;" class="add3D Left element " animation="write" after="1">About</div>
+            <div style="font-size: 12pt;    word-break: break-word;padding: 10px;" class="element " animation="show" after="2">
+              <span style="font-weight: 600;font-size: 15pt;">Abdullah Altahery</span> is the <span style="font-weight: 600;">CEO and Founder</span> at <img  src="imgs/yetechltr.png" style="    position: relative;
+              width: 70px;
+              margin-bottom: -9px;
+              padding-left: 5px;
+              padding-right: 5px;" /> (A Tech Startup That Builds Web Applications),<br> 
+              He previously worked as a <span style="font-weight: 600;">Full-Stack Engineer</span> and <span style="font-weight: 600;">Android Engineer</span> for <img  src="imgs/am.png" style="    position: relative;
+              width: 70px;
+              margin-bottom: -9px;
+              padding-left: 5px;
+              padding-right: 5px;" /> and many other companies,
+              <br>
+              <br>
+              <span style="font-weight: 600;">Outside</span> of clients and other work-related projects, <br>
+              Abdullah is a <span style="font-weight: 600;">Coffee and Space  lover ❤️</span>. 
+              
+              He enjoys <span style="font-weight: 600;">Making Music</span> 🎶 and hanging out in the nearest cafe ☕.
+              <br><br>
+              Abdullah is originally from Shabwah and spent many years in Ta'izz. He currently resides in Sana'a .
+            </div>
+            <div class="element " animation="show" after="3">
+              <a href="https://twitter.com/Robot0x01" target="_blank">
+                <div style="margin-left:0px;" class="about-btn"><div>Twitter</div> <i style="color: #007eff;"  class="fab fa-twitter"></i></div>
+              </a>
+              
+              <a href="https://www.facebook.com/YeTechSupport" target="_blank">
+                <div class="about-btn"><div>Facebook</div> <i style="color: #3300ff;"  class="fab fa-facebook"></i></div>
+              </a>
+              <a href="https://www.soundcloud.com/KernelCode" target="_blank">
+                <div class="about-btn"><div>SoundCloud</div> <i style="color: rgb(255, 94, 0)" class="fab fa-soundcloud"></i></div>
+              </a>
+              
+              <a href="https://github.com/kernelcode" target="_blank">
+                <div class="about-btn"><div>Github</div> <i class="fab fa-github"></i></div>
+              
+              </a>
+              
+            </div>
+          </div>
+
+        </div>
+        <div class="col-xs-2 colline">
+          
+        </div>
+      </div>
+    </div>
+    <div class="stages stage3">
+      <div  id="next">NEXT Project ➜</div>
+      <canvas id="imagecanvas" ></canvas>
+      <div class="centerHight">
+        <div class="wrapper">
+          <div class="project project0 projects">
+            <div class="row">
+              
+              <div class="col-xs-12 ">
+                <h2>Shopping Website Front-End</h2>
+              </div>
+              <div class="col-xs-12">
+                <div class=" txt">
+                  <div>
+
+                  </div>
+                  <div>
+                    Demo Project for shopping games and consoles .
+                  </div>
+                  <div class="tags">
+                    <div class="tag">JavaScript</div>
+                    <div class="tag">CSS3</div>
+                    <div class="tag">HTML5</div>
+                    <div class="tag">ReactJS</div>
+                  </div>
+                  <div class="button">
+                    <a href="./imgs/Game Shop Theme.jpg" target="_blank">
+                      <div class="about-btn"><div>OPEN</div> <i style="color: #3300ff;"  class="fas fa-link"></i></div>
+                    </a>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project project1 projects">
+            <div class="row">
+              
+              <div class="col-xs-12 ">
+                <h2>Estra7ah App تطبيق استراحه </h2>
+              </div>
+              <div class="col-xs-12">
+                <div class="txt ">
+                  <div>
+
+                  </div>
+                  <div>
+                    Media Server (with Android & iOS ) Streaming (videos,audios) to public wireless networks
+                  </div>
+                  <div class="tags">
+                    <div class="tag">JavaScript</div>
+                    <div class="tag">ReactNative</div>
+                    <div class="tag">WebSockets</div>
+                    <div class="tag">GraphQL</div>
+                  </div>
+                  <div class="button">
+                    <a href="https://play.google.com/store/apps/details?id=co.yetech.estra7ahmanager" target="_blank">
+                      <div class="about-btn"><div>OPEN</div> <i style="color: #3300ff;"  class="fas fa-link"></i></div>
+                    </a>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project project2 projects">
+            <div class="row">
+              
+              <div class="col-xs-12 ">
+                <h2>Estra7ah Manager استراحه مانجر</h2>
+              </div>
+              <div class="col-xs-12">
+                <div class="txt ">
+                  <div>
+
+                  </div>
+                  <div>
+                    Media Server Streaming (videos,audios) to public wireless networks 
+                    supports (Linux/Windows)
+                    <br>
+                    Over (20K Users streaming videos with our platform daily)
+                  </div>
+                  <div class="tags">
+                    <div class="tag">JavaScript</div>
+                    <div class="tag">CSS3</div>
+                    <div class="tag">HTML5</div>
+                    <div class="tag">ReactJS</div>
+                    <div class="tag">NodeJS</div>
+                    <div class="tag">MongoDB</div>
+                    <div class="tag">GraphQL</div>
+                  </div>
+                  <div class="button">
+                    <a href="http://yetech.co/estra7ah" target="_blank">
+                      <div class="about-btn"><div>OPEN</div> <i style="color: #3300ff;"  class="fas fa-link"></i></div>
+                    </a>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
     </div>
-	<div class="enterbutn" id="enter">Enter</div>
-	<div style="
-	    font-size: 12px;
-	    color: #a67c30;
-	    padding: 10px;
-	    text-align: center;
-	    position: relative;
-	    top: 84%;
-	    margin: auto;
-	">made with love by Abdullah Altahery</div>
-    <iframe src="./cold.mp3" allow="autoplay" style="display:none" id="iframeAudio">
-    </iframe> 
-</div>
-
-<script>
-
-     var colors = [
-        "#535353","#966915",
-        "#a77d31","#523e19",
-        "#966915","#535353",
-        "#535353","#523e19"
-    ];
-    colors2= [
-        "#966915","#966915",
-        "#a77d31","#523e19",
-        "#966915","#a77d31",
-        "#966915","#523e19"
-    ];
-    function getRandomInt(min, max) {
-		return Math.floor(Math.random() * (max - min + 1)) + min;
-    }
-	function getRandom(min, max) {
-		return Math.random() * (max - min + 1) + min;
-	}
-    //    <div class="letter">A</div>
-    var app = document.getElementById("app");
-    var code = [ `The only limits for tomorrow`,`are the doubts we have today`,'Only I can change my life.','No one can do it for me','Life is 10% what happens to you','and 90% how you react to it.','Be happy for this moment.',' This moment is your life.'];
-
-    var show_time = 0;
-    function getSecs(ms){
-        if(ms)
-            return (new Date().getTime() );
-        else
-            return (new Date().getTime() / 1000);
-    }
-    function setEl(d,time){
-        var scaelRand = getRandom(0.2,0.3);
-        d.style.transition = "color "+getRandom(0,1)+"s ease,transform "+scaelRand+"s ease"; 
-        setTimeout(function(){
-            var c = colors[getRandomInt(0,colors.length-1)];
-            d.style.color = c; 
-
-                d.style.transform = "scale("+scaelRand+")"; 
-           
+    <div class="stages stage4">
+      <div class="wrapper">
+        <div class="row">
+        
+          <div class="col-xs-12">
+            <div class="centerHight">
+              
+              
+              <div  class="pre">
+                  <span>90%</span>
+                <div class="fill" style="width: 90%;">
+                  <div>Problems Solving</div>
+                </div>
+              </div>
             
-            var rand = getRandom(1,4);
-            setTimeout(function(){
-                d.style.transition = "color 3s ease,transform 4s ease"; 
-                setTimeout(function(){
-                    d.style.color = "#a77d31";
-                    d.style.transform = "scale(1)"; 
-                    d.style.opacity = getRandom(0.4,0.9); 
-                },100)
-            },time/2.8)
-            
-            
-            
-            setTimeout(function(){
-                d.style.transition = "color 3s ease,transform 3s ease"; 
-                d.style.color = "#131313";
-                d.style.transform = "scale("+getRandom(0.4,0.9)+")"; 
-                setTimeout(function(){
-                    d.remove();
-                },time/2.4);
-            },time+getRandom(100,200))
-        },100);
+              <div  class="pre">
+                 <span>80%</span>
+                <div class="fill" style="width: 80%;">
+                  <div>JavaScript</div>
+                </div>
+              </div>
+              <div  class="pre">
+                <span>75%</span>
+                <div class="fill" style="width: 75%;">
+                  <div>NodeJS</div>
+                </div>
+              </div> 
+              <div  class="pre">
+                 <span>85%</span>
+                <div class="fill" style="width: 85%;">
+                  <div>ReactJS</div>
+                </div>
+              </div>
+              <div  class="pre">
+                 <span>70%</span>
+                <div class="fill" style="width: 70%;">
+                  <div>ReactNative</div>
+                </div>
+              </div>
+              <div  class="pre">
+                <span>80%</span>
+                <div class="fill" style="width: 80%;">
+                  <div>Android/Java OOP</div>
+                </div>
+              </div>
+              <div  class="pre">
+                <span>60%</span>
+                <div class="fill" style="width: 60%;">
+                  <div>Product Management</div>
+                </div>
+              </div>
+              <div  class="pre">
+                <span>75%</span>
+                <div class="fill" style="width: 75%;">
+                  <div>UI/UX</div>
+                </div>
+              </div>
 
+            </div>
+          </div>
+        
+        </div>
+      </div>
+    </div>
 
-    }
-    var i = 0;
-    var mouseXY={mX:0,mY:0};
-    var s= 0;
-    var timet = 8000;
-    var fontsize = 30;
-    var ci=0;
-    var letters = code[ci%code.length].split("");
-
+   
+    <!-- IMPORT JS-->
     
-    function doit(timet){
-        
-        var letters = code[ci%code.length].split("");
-        ci++;
-        var fontsize = 30;
-        var letters_space = fontsize/1.7;
-        var offx = (window.innerWidth/2)-(letters.length*(letters_space/2));
-        var offy = (window.innerHeight/2)-30;
-        var speed = 60;
-        
-        var sin = getRandom(1,10);
-        var deep = getRandom(1,10);
+    <script src="js/lz-string.min.js"></script>
+    <script src="js/scroller.js"></script>
+    <script src="js/TextCanvas.js"></script>
+    <script src="js/face.js"></script>
+    <script src="js/ScrollImages.js"></script>
+    <!-- END IMPORT-->
 
-        for(var g=0;g<letters.length;g++){
-            (function(g){
-                setTimeout(function(){
-                    setUpLetter(g,(g*letters_space)+offx,Math.abs(Math.sin(g/deep)*sin)+offy,letters,fontsize,timet);
-                },speed*g);
-            })(g);
-        }
-        for(var g=0;g<letters.length;g++){
-            (function(g){
-                setTimeout(function(){
-                    setUpLetter(g,(g*letters_space)+offx,Math.abs(Math.sin(g/deep)*sin)+offy,letters,fontsize,timet);
-                },speed*g);
-            })(g);
-        }
-    }
-    setInterval(function(){
-       doit(timet)
-    },timet)
-    doit(timet);
-  
-    
-    function setUpLetter(i,x,y,letters,fontsize){
-        var letter = document.createElement("div");
-        letter.classList.add("letter");
-        letter.style.position = "absolute";
-        letter.style.fontSize = fontsize+"px";
-        
-        letter.style.top = y;
-        letter.style.left = x;
-        
-        letter.innerHTML = letters[i%letters.length].toUpperCase();
-      
-        app.appendChild(letter);
-        setEl(letter,timet/1.4);
-
-    }
-
-    var e = document.getElementById("enter");
-    e.addEventListener("click",function(){
-        document.getElementById("body").style.transform="scale(1.3)";
-        document.getElementById("body").style.opacity ="0";
-        setTimeout(function(){
-            location.href="/index2.html";
-        },1000);
-    });
-
-</script>
+  </body>
+</html>
