@@ -36,18 +36,7 @@ async function drawStuff() {
   ctx.fillStyle = "black";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-/*
-  center = await (await fetch("./imgs/center.points")).text();
-  left = await (await fetch("./imgs/left.points")).text();
-  right = await (await fetch("./imgs/right.points")).text();
-  altahery = await (await fetch("./imgs/altahery.points")).text();
-  altahery = JSON.parse(altahery);
-  Abdullah = await (await fetch("./imgs/abdullah.points")).text();
-  Abdullah = JSON.parse(Abdullah);
-  center = JSON.parse(center);
-  left = JSON.parse(left);
-  right = JSON.parse(right);
-  */
+
   for(var x=0;x<canvas.width;x+=size){
     for(var y=0;y< canvas.height;y+=size){
 
@@ -83,47 +72,14 @@ async function drawStuff() {
       });
     }
   }
-  /*var gg = 0;
-  setInterval(()=>{
-    for(var i=0;i<points.length;i+=1){
-    
-      //points[i].x = poinsss[i].p[0];
-      //points[i].y = poinsss[i].p[1];
-      //points[i].rx =  points[i].rrx;
-     // points[i].ry =  points[i].rrx; 
-      points[i].rc.g = 0;
-    }
-  },2000);*/
 
 }
 var mx,my;
 var gap = 200;
-/*setInterval(()=>{
-  var p1i = getRandomInt(1,points.length-1);
-  var p2i = getRandomInt(1,points.length-1);
-  if(!points[p1i] || !points[p2i]){
-    return;
-  }
-  var pt = points[p1i];
-  points[p1i] = points[p2i];
- 
-  points[p2i] = pt;
-},1);*/
+
 var showFace = false;
 var pointsSlowVal = [0.02,0.002];
-/*setTimeout(()=>{
-  showFace = true;
-  pointsSlowVal= [0.2,0.2]
-},10000)
-setTimeout(()=>{
-  showFace = false;
-  pointsSlowVal= [0.02,0.002];
- 
- 
-  lines = [];
-  lines2 = [];
-  lines3 = []
-},20000)*/
+
 window.addEventListener('mousemove', (e)=>{
   
   mx = e.clientX;
@@ -306,36 +262,11 @@ function loop() {
           points[randi].x==lines[0].x &&
           points[randi].y==lines[0].y 
         ){
-          /*
-            lines.push(points[randi]);
-            var np = JSON.parse(JSON.stringify(points[randi]));
-     
-            np.x = np.x+getRandomInt(1,2)
-            np.y = np.y+getRandomInt(1,2)
-            lines2.push(np);
-            np.x = np.x+getRandomInt(1,2)
-            np.y = np.y+getRandomInt(1,2)
-            lines3.push(np);*/
-          /*
-          if(!isWin){
-            isWin = true;
-            var hw = parseInt(hightsWin.innerHTML);
-            if(hw<lines.length){
-              hightsWin.innerHTML = lines.length;
-            }
-            wins.innerHTML = parseInt(wins.innerHTML)+1;
-            lineLimit += 20;
-            //isClicedToAdd = false;
-
-            setTimeout(()=>{
-              isWin = false;
-              lines = [];
-            },1000)
-          }*/
+  
           
         }
         
-        if(!isWin /*&& isClicedToAdd*/ && showFace){
+        if(!isWin && showFace){
           
           if(!InLines(points[randi],lines))
             lines.push(points[randi]);
@@ -458,15 +389,6 @@ function loop() {
     ctx.stroke();
   }
 
-/*
-  ctx.beginPath();
-  ctx.arc(canvas.width/2, canvas.height/2, 100, 1*Math.PI, 1.5 * Math.PI, false);
-  //ctx.arc(100,75,50,1*Math.PI,1.5*Math.PI);
-  ctx.fillStyle = 'green';
-  ctx.fill();
-  ctx.lineWidth = 1;
-  ctx.strokeStyle = 'green';
-  ctx.stroke();*/
   var INDEX = 1;
   
   ctx.beginPath();
@@ -570,42 +492,6 @@ function screensInout(screens,isIn){
 
   }
 }
-setTimeout(()=>{
-  /*var screens = document.querySelectorAll(".movment-screens > .screens");
-  console.log(screens);
-  screensInout(screens,true)
-  setTimeout(()=>{
-    screensInout(screens,false);
-  },5000)*/
-  /*
-  setTimeout(()=>{
-    S2.style.top="0%";
-   
-  },300)
-  setTimeout(()=>{
-    S3.style.top="0%";
-  },500)
-  setTimeout(()=>{
-    S4.style.top="0%";
-  },700)
-  setTimeout(()=>{
-    S5.style.top="0%";
-  },900)
-  setTimeout(()=>{
-    S6.style.top="0%";
-  },1200)*/
 
-  /*
-  setTimeout(()=>{
-    white.style.top="200%";
-    setTimeout(()=>{
-      blue.style.top="200%";
-    
-    },300)
-    setTimeout(()=>{
-      red.style.top="200%";
-    },500)
-  },1550)*/
-},4000)
 
 

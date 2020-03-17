@@ -194,11 +194,7 @@ function onLoadScroll(){
       },long);
     },10000);
   }
- /*
-  doAnimation();
-  setInterval(()=>{
-    doAnimation();
-  },12000)*/
+
   function toYNow(img,xy){
 
     img.secs[0].tox=xy.x;
